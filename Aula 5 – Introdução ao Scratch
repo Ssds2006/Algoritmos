@@ -1,0 +1,25 @@
+Algoritmo "CREUZA1-idade"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/06/2022
+Var
+   // Seção de Declarações das variáveis
+
+      ano_atual, ano_nascimento,idade: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   escreva("Em que anos nos estamos: ")
+   leia(ano_atual)
+   escreva("Em que ano eu nasci: ")
+   leia(ano_nascimento)
+   
+   idade <- ano_atual - ano_nascimento
+   
+   escreva("Minha idade será: ", idade)
+
+
+Fimalgoritmo
