@@ -1,0 +1,196 @@
+Algoritmo "ESTRUTURAS CONDICIONAIS 2"
+
+Var
+   // Seção de Declarações das variáveis
+
+   NOTA1,NOTA2,MEDIA:REAL
+   //---------------------------------------//
+   //---------------------------------------//
+   MASSA, ALTURA,IMC:REAL
+   //---------------------------------------//
+   //---------------------------------------//
+   OPCAO:INTEIRO
+   VALOR:REAL
+   //---------------------------------------//
+   //---------------------------------------//
+   NOME : CARACTER
+   SALARIO,NSALARIO:REAL
+   DEPENDENTE:INTEIRO
+   //---------------------------------------//
+   //---------------------------------------//
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   //*********** ESTRUTURA CONDICIONAL: ANINHADA*******************
+   //-------------EXEMPLO---------------
+   //SE(DINHEIRO >= 10000)ENTAO
+   //    ESCREVA("PARTIU DISNEY")
+   //SENAO
+   //   SE(DINHEIRO>= 5000) E (DINHEIRO < 10000) ENTAO
+   //      ESCREVA("VISITAR FAMILIA")
+   //   SENAO
+   //      ESCREVA("#CHATEADO")
+   //   FIMSE
+   //FIMSE
+
+   //**********PRÁTICA 1*****************
+   //--ALUNO APROVADO,REPROVADO OU EM RECUPERAÇÃO--
+
+   ESCREVAL("----------------------------")
+   ESCREVAL("   ESCOLA JAVALI CANSADO    ")
+   ESCREVAL("----------------------------")
+   ESCREVA (" DIGITE A 1ºNOTA : ")
+   LEIA(NOTA1)
+   ESCREVA (" DIGITE A 2ºNOTA ): ")
+   LEIA(NOTA2)
+
+   MEDIA <- (NOTA1+NOTA2)/2
+
+   ESCREVAL("----------------------------")
+   ESCREVAL(" MEDIA: ", MEDIA)
+
+   SE (MEDIA >=7)ENTAO
+      ESCREVAL("ALUNO APROVADO")
+      ESCREVAL("----------------------------")
+   SENAO
+      SE (MEDIA >=5)E (MEDIA<7) ENTAO
+         ESCREVAL("ALUNO EM RECUPERACAO")
+         ESCREVAL("----------------------------")
+
+      SENAO
+         ESCREVAL("ALUNO REPROVADO")
+         ESCREVAL("----------------------------")
+
+      FIMSE
+   FIMSE
+
+   //********** PRÁTICA 2 *****************
+
+   //**********CÁLCULO IMC***********//
+   ESCREVAL("-------------------------------------------------")
+   ESCREVAL(" ESTRUTURA CONDICIONAL COMPOSTA **SE E SENÃO**")
+   ESCREVAL("********** CÁLCULO IMC ***********")
+   ESCREVAL("-------------------------------------------------")
+
+   ESCREVA("MASSA (KG): ")
+   LEIA(MASSA)
+   ESCREVA("ALTURA (M): ")
+   LEIA(ALTURA)
+
+   IMC <- MASSA / (ALTURA ^ 2)
+
+   ESCREVAL("IMC: " , IMC:5:2)
+
+   SE (IMC < 17) ENTAO
+      ESCREVAL("MUITO ABAIXO DO PESO")
+      ESCREVAL("----------------------------")
+   SENAO
+      SE (IMC >=17) E (IMC < 18.5) ENTAO
+         ESCREVAL("ABAIXO DO PESO")
+         ESCREVAL("----------------------------")
+      SENAO
+         SE(IMC >= 18.50) E (IMC < 25)  ENTAO
+            ESCREVAL(" PESO IDEAL.")
+            ESCREVAL("----------------------------")
+         SENAO
+            SE (IMC >25) E (IMC<30) ENTAO
+               ESCREVAL("SOBREPESO")
+               ESCREVAL("----------------------------")
+            SENAO
+               SE(IMC >=30) E (IMC <35)ENTAO
+                  ESCREVAL("OBESIDADE")
+                  ESCREVAL("----------------------------")
+               SENAO
+                  SE(IMC >=35) E (IMC <40)ENTAO
+                     ESCREVAL("OBESIDADE SEVERA")
+                  SENAO
+                     ESCREVAL("OBESIDADE MÓRBIDA.")
+                     ESCREVAL("----------------------------")
+                  FIMSE
+               FIMSE
+            FIMSE
+         FIMSE
+      FIMSE
+   FIMSE
+
+
+   //***************ESTRUTURA CONDCIONAL: ESCOLHA CASO*******************
+   //------EXEMPLO-------
+   //ESCOLHA (VARIÁVEL)
+   //CASO VALOR
+   // BLOCO A
+   //CASO VALOR
+   // BLOCO B
+   //CASO VALOR
+   // BLOCO C
+   //OBS:(OPCIONAL: CASO NENHUM DOS VALORES ACIMA SEJAM EXIBIDOS UM BLOCO D SERÁ EXECUTADO)
+   //OUTROCASO
+   // BLOCO D
+
+
+   //********** PRÁTICA 3 *****************
+
+   //**********CRIANÇA ESPERANÇA***********//
+
+   ESCREVAL("----------------------------")
+   ESCREVAL("     CRIANÇA ESPERANÇA      ")
+   ESCREVAL("----------------------------")
+   ESCREVAL("  MUITO OBRIGADO POR AJUDAR ")
+   ESCREVAL("  [1] PARA DOAR R$ 10.00 ")
+   ESCREVAL("  [2] PARA DOAR R$ 25.00 ")
+   ESCREVAL("  [3] PARA DOAR R$ 50.00 ")
+   ESCREVAL("  [4] PARA DOAR OUTROS VALORES ")
+   ESCREVAL("  [5] PARA CANCELAR ")
+   LEIA(OPCAO)
+
+   ESCOLHA OPCAO
+   CASO 1
+      VALOR <- 10
+   CASO 2
+      VALOR <- 25
+   CASO 3
+      VALOR <- 50
+   CASO 4
+      ESCREVAL("QUAL O VALOR DA DOAÇÃO? R$")
+      LEIA(VALOR)
+   CASO 5
+      VALOR <- 0
+   FIMESCOLHA
+
+   ESCREVAL("----------------------------")
+   ESCREVAL(" SUA DOAÇÃO FOI DE R$" , VALOR)
+   ESCREVAL(" MUITO OBRIGADA! ")
+   ESCREVAL("----------------------------")
+
+   //********************** PRÁTICA 4 *************************
+
+   //****QUANTIDADE DE DEPENDENTES DE UM FUNCIONÁRIO***********//
+
+   ESCREVA("QUAL O NOME DO FUNCIONÁRIO? ")
+   LEIA(NOME)
+   ESCREVA ("QUAL O SALARIO DO FUNCIONARIO? R$")
+   LEIA(SALARIO)
+   ESCREVA (" QUAL E A QUANTIDADE DE DEPENDENTES? ")
+   LEIA(DEPENDENTE)
+
+   ESCOLHA DEPENDENTE
+   CASO 0
+      NSALARIO <- SALARIO + (SALARIO*5/100)
+   CASO 1,2,3
+      NSALARIO <- SALARIO + (SALARIO*10/100)
+   CASO 4,5,6
+      NSALARIO <- SALARIO + (SALARIO*15/100)
+   OUTROCASO
+      NSALARIO <- SALARIO + (SALARIO/18/100)
+   FIMESCOLHA
+
+   ESCREVAL("O NOVO SALALRIO DE ", NOME ," SERÁ DE R$ ", NSALARIO:5:2)
+
+
+
+
+
+
+
+Fimalgoritmo
