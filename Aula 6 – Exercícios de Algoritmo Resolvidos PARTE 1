@@ -1,0 +1,23 @@
+Algoritmo "CREUZA2 - DOLARES"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/06/2022
+Var
+// Seção de Declarações das variáveis
+     reais, dolares:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+// CONVERSÃO DE REAIS PARA DOLARES
+
+   escreva("Quantos reias eu tenho R$? ")
+   leia(reais)
+
+   dolares<-  reais/4.90
+   escreval("Posso ter US$ ", dolares)
+   
+   
+Fimalgoritmo
