@@ -1,0 +1,30 @@
+Algoritmo "AULA 7 - EXERCICIO 1 - ESTÁ APTO A DIRIGIR?"
+
+Var
+   // Seção de Declarações das variáveis
+    IDADE,ANOATUAL,ANONASC:INTEIRO
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   ESCREVAL("----------------------------")
+   ESCREVAL("  DEPARTAMENTO DE TRÂNSITO  ")
+   ESCREVAL("----------------------------")
+   ESCREVA ("  ANO ATUAL (YYYY): ")
+   LEIA(ANOATUAL)
+   ESCREVA ("  ANO DE NASCIMENTO (YYYY): ")
+   LEIA(ANONASC)
+   
+   IDADE <- ANOATUAL - ANONASC
+   
+   ESCREVAL("-----------STATUS-----------")
+   ESCREVAL(" IDADE: ", IDADE)
+
+   SE (IDADE >=18)ENTAO
+      ESCREVAL("APTO A TIRAR CARTEIRA")
+   SENAO
+      ESCREVAL("INAPTO A TIRAR CARTEIRA")
+   FIMSE
+
+
+Fimalgoritmo
