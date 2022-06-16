@@ -1,0 +1,23 @@
+Algoritmo "CREUZA3 - TEMPERATURA"
+
+Var
+// Seção de Declarações das variáveis 
+
+farenaites,celsius:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+// CONVERSÃO DE  FARENAITES PARA CELSIUS
+
+escreva("Qual a temperatura aqui?")
+leia(farenaites)
+
+ celsius <- (farenaites -32)/1.8
+
+escreva ("No Brasil estaria: ", celsius:4:1 , "ºC")
+
+
+
+
+Fimalgoritmo
