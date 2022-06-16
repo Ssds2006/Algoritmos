@@ -1,0 +1,30 @@
+Algoritmo "AULA 7 - EXERCICIO 2 - ALUNO APROVADO OU REPROVADO"
+
+Var
+   // Seção de Declarações das variáveis
+
+   NOTA1,NOTA2,MEDIA:REAL
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   ESCREVAL("----------------------------")
+   ESCREVAL("   ESCOLA JAVALI CANSADO    ")
+   ESCREVAL("----------------------------")
+   ESCREVA (" DIGITE A 1ºNOTA : ")
+   LEIA(NOTA1)
+   ESCREVA (" DIGITE A 2ºNOTA ): ")
+   LEIA(NOTA2)
+
+   MEDIA <- (NOTA1+NOTA2)/2
+
+   ESCREVAL("----------------------------")
+   ESCREVAL(" MEDIA: ", MEDIA)
+
+   SE (MEDIA >=7)ENTAO
+      ESCREVAL("ALUNO APROVADO")
+   SENAO
+      ESCREVAL("ALUNO REPROVADO")
+   FIMSE
+
+
+Fimalgoritmo
