@@ -1,0 +1,88 @@
+Algoritmo "AULA-7 ESTRUTURAS CONDICIONAIS - PARTE 1"
+
+Var
+   // Seção de Declarações das variáveis
+   //*********************************************
+
+   IDADE,ANO,NASC:INTEIRO
+
+   NUM:INTEIRO
+   
+   MASSA, ALTURA,IMC:REAL
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   // ESTRUTURA CONDICIONAL "SE" //
+   //***CALCULO IDADE - MAIORIDADE***//
+
+
+   ESCREVAL("-------------------------------------------------")
+   ESCREVAL(" ESTRUTURA CONDICIONAL **SE**")
+   ESCREVAL("*** CÁLCULO IDADE - MAIORIDADE ***")
+   ESCREVAL("-------------------------------------------------")
+   ESCREVA("EM QUE ANO ESTAMOS? ")
+   LEIA(ANO)
+   ESCREVA("EM QUE ANO VOCÊ NASCEU? ")
+   LEIA(NASC)
+
+   IDADE <- ANO - NASC
+
+   ESCREVA("EM " , ANO , " VOCÊ TERÁ " , IDADE , " ANOS.")
+
+   SE (IDADE >= 21) ENTAO
+      ESCREVAL (" E JÁ TERÁ ATINGINDO A MAIORIDADE!")
+   FIMSE
+
+   ESCREVAL("-------------------------------------------------")
+   ESCREVAL("**************************************************")
+
+   // ESTRUTURA CONDICIONAL COMPOSTA "SE E SENÃO" //
+   //**********PAR OU IMPAR ***********//
+   ESCREVAL("-------------------------------------------------")
+   ESCREVAL(" ESTRUTURA CONDICIONAL COMPOSTA **SE E SENÃO**")
+   ESCREVAL("********** PAR OU IMPAR ***********")
+   ESCREVAL("-------------------------------------------------")
+
+   ESCREVA("DIGITE UM NUMERO QUALQUER: ")
+   LEIA(NUM)
+
+   SE (NUM % 2 = 0) ENTAO
+      ESCREVAL("O NÚMERO " , NUM , " É PAR")
+   SENAO
+      ESCREVAL("O NÚMERO " , NUM , " É ÍMPAR")
+   FIMSE
+
+   ESCREVAL("-------------------------------------------------")
+   ESCREVAL("**************************************************")
+   
+   // ESTRUTURA CONDICIONAL COMPOSTA "SE E SENÃO" //
+   //**********CÁLCULO IMC***********//
+   ESCREVAL("-------------------------------------------------")
+   ESCREVAL(" ESTRUTURA CONDICIONAL COMPOSTA **SE E SENÃO**")
+   ESCREVAL("********** CÁLCULO IMC ***********")
+   ESCREVAL("-------------------------------------------------")
+
+   ESCREVA("MASSA (KG): ")
+   LEIA(MASSA)
+   ESCREVA("ALTURA (M): ")
+   LEIA(ALTURA)
+
+   IMC <- MASSA / (ALTURA ^ 2)
+
+   ESCREVAL("IMC: " , IMC:5:2)
+
+   SE(IMC >= 18.50) E (IMC < 25)  ENTAO
+      ESCREVAL("PARABÉNS! VOCÊ ESTÁ NO SEU PESO IDEAL.")
+   SENAO
+        ESCREVAL("VOCÊ NÃO ESTÁ NA FAIXA DE PESO IDEAL.")
+   FIMSE
+
+
+
+
+
+
+
+
+Fimalgoritmo
