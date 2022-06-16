@@ -1,0 +1,33 @@
+Algoritmo "CREUZA5- EMPRESTIMMO"
+
+Var
+   // Seção de Declarações das variáveis
+
+   EMPRESTIMO,JUROSEMP,EMP_PARCELAS:REAL
+   PARCELAS: INTEIRO
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+  // CALCULO DE EMPRESTIMO
+
+   ESCREVA("QUAL O VALOR DO EMPRESTIMO? R$")
+   LEIA(EMPRESTIMO)
+
+   JUROSEMP <- ((EMPRESTIMO * 20) / 100) + EMPRESTIMO
+   ESCREVAL("*********************************************************")
+   ESCREVAL("VALOR DO EMPRESTIMO COM JUROS DE 20% É: R$" , JUROSEMP:6:2)
+   ESCREVAL("*********************************************************")
+   ESCREVA("ENQUANTAS VEZES VAI PARCELAR?" )
+   LEIA(PARCELAS)
+
+   EMP_PARCELAS <- JUROSEMP / PARCELAS
+   ESCREVAL("*********************************************************")
+   ESCREVAL("VOU PAGAR ", PARCELAS ," PARCELAS DE R$ ", EMP_PARCELAS:5:2)
+
+
+
+   //20% DE JUROS
+
+
+Fimalgoritmo
