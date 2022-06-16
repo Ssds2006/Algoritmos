@@ -1,0 +1,88 @@
+Algoritmo "Operadores lógicos e Relacionais"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/06/2022
+Var
+// Seção de Declarações das variáveis
+
+//A, B, C: Inteiro
+
+//*****TESTE
+
+L1,L2,L3:REAL
+EQ,ES, TRI:LOGICO
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+//***OPERADORES RELACIONAIS: GERA SEM UM VALOR LÓGICO (VERDADEIRO OU FALSO)***//
+// > : MAIOR QUE
+// < : MENOR QUE
+// >= : MAIOR OU IGUAL A
+// <= : MENOR OU IGUAL A
+// = : IGUAL A
+// <> : DIFERENTE DE
+
+    //A<-2
+    //B<-3
+    //C<-5
+
+    //escreva(A>B)
+    //escreva(A=B)
+    //escreva(A<>B)
+    //escreva(A>=2)
+    //escreva(A>2)
+    //escreva(C=A+B)
+    //escreva(C>=B^A)
+    //escreva(C<=B^A)
+    //escreva(B<=C%2)
+    //escreva(1=C%2)
+
+//****OPERADORES LÓGICOS: GERA UM VALOR TAM LÓGICO PORÉM 2 OPERAÇÕES***
+
+//----OPERADOR LÓGICO "E" somente o verdadeiro permanece verdadeiro
+
+//v E v = V
+//v E f = F
+//f E v = F
+//f E f = F
+
+//----OPERADOR LÓGICO "OU" somente 2 falso permanece falso
+//vOUv = V
+//vOUf = V
+//fOUv = V
+//fOUf = F
+
+//----OPERADOR LÓGICO "NÃO" INVERTE O RESULTADO
+// v = NÃOf
+// f = NÃOv
+
+//*****EXEMPLO*****
+
+//escreva(VERDADEIRO E FALSO)
+
+//escreva((A=B)OU(C>A))
+
+//escreva(NAO((A=B)OU(C>A)))
+
+//*************EXEMPLO LÓGICO
+
+ESCREVA("DIGITE O 1º LADO: ")
+LEIA(L1)
+ESCREVA("DIGITE O 2º LADO: ")
+LEIA(L2)
+ESCREVA("DIGITE O 3º LADO: ")
+LEIA(L3)
+
+TRI<-(L1<L2+L3) E (L2<L1+L3) E (L3<L2+L1)
+EQ<-(L1=L2) E (L2=L3)
+ES<-(L1<>L2) E (L2<>L3) E (L3<>L1)
+
+ESCREVAL("PODE FORMAR UM TRIANGULO? ", TRI)
+ESCREVAL("O TRIANGULO É EQUILÁTERO? " , EQ)
+ESCREVA ("O TRIANGULO É ESCALENO?  " , ES)
+
+
+Fimalgoritmo
