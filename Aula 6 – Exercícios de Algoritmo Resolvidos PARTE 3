@@ -1,0 +1,22 @@
+Algoritmo "CREUZA4 - IMPOSTO"
+
+Var
+   // Seção de Declarações das variáveis
+   preco, imposto: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+    // CALCULO DE IMPOSTO
+
+    escreva("Qual o valor do produto?")
+    leia(preco)
+
+      
+    imposto<- (preco * 60) /100
+    
+    escreva("O imposto será US$" , imposto:5:2)
+
+
+
+Fimalgoritmo
