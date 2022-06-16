@@ -1,0 +1,114 @@
+Algoritmo "Comando de entrada e operadores"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/06/2022
+Var
+// Seção de Declarações das variáveis
+//************************
+//************utilizando atribuições*************
+// **nome:caractere
+
+//***SOMA DE 2 NÚMEROS****///
+
+//N1, N2, S: INTEIRO
+
+//***SOMA DE MÉDIA***///
+
+//N1, N2: INTEIRO
+//M: real
+
+//*** EXEMPLO FUNÇÕES ARITIMETICAS****////
+
+//A:real
+
+//******EXEMPLO DE CONVERSOR***////////
+
+angulo,s: real
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+//******PROCESSO DE ATRIBUIÇÃO************////
+//nome<-"Gustavo"
+
+//escreva("Muito prazer ", nome )
+
+// ******SOMA DE 2 NÚMEROS*********//
+
+//escreva("Informe um número: ")
+//leia(N1)
+//escreva("Informe outro número: ")
+//leia(N2)
+//S <- N1 + N2
+//escreva("A Soma dos 2 números digitados é: ", S)
+
+//************MÉDIA DE 2 NÚMEROS**********
+
+//escreva("Informe a primeira nota: ")
+//leia(N1)
+//escreva("Informe a segunda nota: ")
+//leia(N2)
+//M <- (N1 + N2)/2
+//escreva("A média das notas digitadas é: ", M)
+
+//******ORDEM E PRECEDÊNCIA (calculo matemático)*******//
+// 1º ()- parêntenses
+// 2º ^ - exponeciação
+// 3º * e / - Multiplicação e divisão
+// 4º + e - adição e subtração
+
+//*******FUNÇÕES ARITMÉTICAS******//
+// Abs -> Valor absoluto - Ex: Abs(-10) "Valor sem o sinal" = 10
+// Exp -> Exponenciação - Ex: Exp(3,2) "A virgula representa o número elevado ao quadrado que 3x3" = 9
+// Int -> Valor inteiro - Ex: Int(3.9) "Essa função retorna o valor inteiro de um número real sem arredonadamento" = 3
+// RaizQ -> Raiz Quadrada - Ex: RaizQ(25) "Essa função retorna a raiz quadrada do número informando dentro do parentes" = 5
+// Pi -> Pi - Ex: 3.14 "Retorna o número de Pi"
+// Sen -> Seno (Rad) - Ex: Sen(0.523) " Seno de 30" = 0.5
+// Cos -> Cosseno(rad) - Ex: Cos(0.523) "Cosseno de 30 É a raiz de 3 sobre 2" =0.86
+// Tan -> Tangente (rad) - Ex: Tan(0.523) "Tangente de 30 É a raiz de 3 sobre 3"
+// GraupRad -> Graus para Radiano - Ex: GraupRad(30) "A soma de um determinado número em radiano" = 0.52
+
+
+/////****EXEMPLOS****//
+
+//A<- Abs(-50)
+//escreva (A)
+
+//***************************
+
+//A<- Exp(9,5)
+//escreva (A)
+
+//***************************
+
+//A<- RaizQ(81)
+//escreva (A)
+
+//***************************JUNTANDO FUNÇÕES********
+
+//**Pegando o valor inteiro da Raiz fracioada*****
+
+//A<- Int(RaizQ(81))
+//escreva (A)
+
+ //A<- GraupRad(90)
+ //escreva (A)
+
+//**Pegando o valor inteiro da Raiz fracioada*****
+
+//A<- Int(GraupRad(90))
+//escreva (A)
+
+//****EXEMPLO DE CONVERSOR****///
+
+
+  Escreva("Informe um angulo: ")
+  leia(angulo)
+  s <- Sen(GraupRad(angulo))
+
+  escreva("o Seno de " , angulo, " é igual a " , s)
+
+
+Fimalgoritmo
